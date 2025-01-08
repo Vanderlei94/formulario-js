@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dúvidas</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="textos">
+            <div class="titulo">
+                <h1>Ficou com Dúvida?</h1>
+                <h2>Nos mande uma mensagem!</h2>
+            </div>
+            <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
+                em menos de 24h.</p>
+        </div>
+
+        <div class="formulario">
+            <div class="container-entradas">
+                <input type="text" name="nome-completo" class="campo" placeholder="Nome completo *">
+                <p class="aviso-no-campo">campo obrigatório</p>
+                <input type="text" name="email" class="campo" placeholder="Email *">
+                <p class="aviso-no-campo">campo obrigatório</p>
+                <input type="tel" name="telefone" class="campo" placeholder="Telefone *">
+                <p class="aviso-no-campo">campo obrigatório</p>
+                <textarea type="text" name="mensagem" class="campo" placeholder="Mensagem *"></textarea>
+                <p class="aviso-no-campo">campo obrigatório</p>
+            </div>
+            <p class="obrigatorio">*campos obrigatórios</p>
+            <a href="#" id="botao-enviar">Enviar</a>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

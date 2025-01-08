@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 12px 50px;
+}
+
+.textos {
+    color: #FFFFFF;
+    width: 300px;
+    height: 110px;
+}
+
+.textos .titulo {
+    margin-bottom: 10px;
+}
+
+.textos .titulo h1, 
+.textos .titulo h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.textos .texto {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 378px;
+    padding: 20px;
+}
+.formulario .container-entradas {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formulario .container-entradas input {
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 9px 0 9px 9px;
+}
+
+.formulario .container-entradas textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    padding: 9px 0 9px 9px;
+}
+
+.aviso-no-campo {
+    display: none;
+    color: #F52E2E;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+
+.obrigatorio {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+#botao-enviar {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* ------ FALTA PREENCHER CAMPOS -------- */
+
+.formulario .container-entradas textarea.aviso-obrigatorio,
+.formulario .container-entradas input.aviso-obrigatorio {
+    border: 1px solid #F52E2E;
+}
+
+.formulario .container-entradas textarea.campo-ok,
+.formulario .container-entradas input.campo-ok {
+    border: 1px solid #00C22B;
+}
+
+.mostrar {
+    display: block;
+}
